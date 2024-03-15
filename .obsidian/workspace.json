@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "9609ef448f2a44c9",
+    "id": "bbf8713fab4bcc0c",
     "type": "split",
     "children": [
       {
-        "id": "8f36108e05d0ba40",
+        "id": "0c1cb0bed8f006ae",
         "type": "tabs",
         "children": [
           {
-            "id": "b246240e06777a0e",
+            "id": "7bb22ced81c55d08",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Others/Evaluation Template.md",
+                "file": "Praktikumsbericht/Mirai Micropsi BPP Bericht.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "e3ea738ed560fa22",
+    "id": "d57084438f414b9f",
     "type": "split",
     "children": [
       {
-        "id": "bf46bd75cc9ab9c6",
+        "id": "2d5ec86c2897d49d",
         "type": "tabs",
         "children": [
           {
-            "id": "046d63db26024c64",
+            "id": "0a7461222a8eb5c3",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "0c67125d606b654e",
+            "id": "0f52d5fd2264bea1",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "87be55473071a07a",
+            "id": "e949e6e795477a7d",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -72,20 +72,20 @@
     "width": 300
   },
   "right": {
-    "id": "d523d04821945519",
+    "id": "fcfb963f3bef90a4",
     "type": "split",
     "children": [
       {
-        "id": "4dccc2e5f6b6acae",
+        "id": "d7df2cc0ad278ba3",
         "type": "tabs",
         "children": [
           {
-            "id": "be87e06ddf5f43d8",
+            "id": "60ac93e7f0232453",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Others/Evaluation Template.md",
+                "file": "Praktikumsbericht/Mirai Micropsi BPP Bericht.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +97,19 @@
             }
           },
           {
-            "id": "703589f61f6e2ca3",
+            "id": "be080b998565d3ec",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Others/Evaluation Template.md",
+                "file": "Praktikumsbericht/Mirai Micropsi BPP Bericht.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "f2034765f95df34b",
+            "id": "9fc266606e37f35d",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,16 +120,17 @@
             }
           },
           {
-            "id": "e5555d31a2a2c45a",
+            "id": "fcead58a306a81ef",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Others/Evaluation Template.md"
+                "file": "Praktikumsbericht/Mirai Micropsi BPP Bericht.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -138,61 +139,50 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "templater-obsidian:Templater": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "b246240e06777a0e",
+  "active": "7bb22ced81c55d08",
   "lastOpenFiles": [
-    "Image Segmentation.md",
     "Others/Evaluation Template.md",
-    "Machine Learning",
-    "Others",
-    "Projects/Automated Screwing/Algorithm Idea for CSC.md",
     "Others/Prompts.md",
     "Others/Budgeting.md",
-    "Praktikumsbericht/Aufbau Praktikumsbericht.md",
-    "BA.md",
-    "Praktikumsbericht/Mirai Micropsi BPP Bericht.md",
-    "Week 10/Task 2024-03-13.md",
-    "Praktikumsbericht/2. Implementation of Mirai Robot Control Technology.md",
-    "Projects/Automated Screwing/Confluence Documentation.md",
-    "Praktikumsbericht/3. Automated Screw Driving Robot for Truck Doors.md",
-    "Praktikumsbericht/1. Introduction.md",
-    "Praktikumsbericht/Resources/Resources for Introduction.md",
-    "Praktikumsbericht/Resources/Internship in Robotics and Computer Vision.md",
-    "Week 3/22.01.2024.md",
-    "Week 3/23.01.2024.md",
-    "Week 2/18.01.2024.md",
-    "Week 2/17.01.2024.md",
-    "Week 2/16.01.2024.md",
-    "Week 2/15.01.2024.md",
-    "Week 1/12.01.2024.md",
-    "Week 1/11.01.2024.md",
-    "Week 1/10.01.2024.md",
-    "Week 1/09.01.2024.md",
-    "Images/ISRA_42.png",
-    "Images/ISRA_41.png",
-    "Images/ISRA_40.png",
-    "Images/ISRA_39.png",
-    "Images/ISRA_38.png",
-    "Images/Screenshot (65).png",
-    "Images/ISRA_37.png",
-    "Images/ISRA_36.png",
-    "Images/Screenshot (80).png",
-    "Images/ISRA_35.png",
-    "Praktikumsbericht/Resources",
-    "Projects/Automated Screwing",
-    "Projects/Mirai-Micropsi",
-    "Projects/FANUC CRX-10iAL Documentation",
-    "Images",
-    "Projects",
-    "Templates",
-    "Guides and Documentation"
+    "Guides and Documentation/Accounts and Links.md",
+    "Guides and Documentation/Starter Onboarding Information From Felix.md",
+    "Guides and Documentation/Mirai-Micropsi Tech.md",
+    "Guides and Documentation/FANUC Roboguide.md",
+    "Image Segmentation.md",
+    "machine-learning/image-classification.md",
+    "machine-learning/image-classification-scikit-learn.md",
+    "opencv/opencv-basics.md",
+    "opencv/number-plate-detection-project.md",
+    "opencv/document-scanner-project.md",
+    "cheat-sheet/markdown-cheat-sheet.md",
+    "machine-learning",
+    "opencv/virtual-paint-project.md",
+    "python/virtual-environment.md",
+    "python/PyCharm-Shortcuts.md",
+    "sd-anaconda-prompt.md",
+    "stable-diffusion-amd",
+    "python/python-chatgpt-prompts.md",
+    "images/Screenshot 2023-11-26 195736.png",
+    "Screenshot 2023-11-26 195736.png.md",
+    "images",
+    "Screenshot.md",
+    "opencv",
+    "python",
+    "cheat-sheet",
+    "venv/Untitled.md",
+    "venv/hello-world.md",
+    "venv/test2.md",
+    "Test.md",
+    "markdown-cheat-sheets.md.md",
+    "venv"
   ]
 }

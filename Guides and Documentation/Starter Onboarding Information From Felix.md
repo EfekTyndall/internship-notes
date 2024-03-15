@@ -1,4 +1,5 @@
 Dear Martyn,
+
 I want to welcome you to Daimler Truck AG Global Advanced Technology  (TE/OMT) and the Smart Automation Team.
 
 Below I have provided some starter onboarding information as well some of the projects where we are working on.

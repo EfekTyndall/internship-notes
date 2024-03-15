@@ -1,10 +1,1 @@
-{
-  "templater-obsidian:Templates/Table of Contents.md": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "T"
-    }
-  ]
-}
+{}

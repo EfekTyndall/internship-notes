@@ -1,4 +1,8 @@
 {
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "Images"
+  "attachmentFolderPath": "images",
+  "showLineNumber": false,
+  "showIndentGuide": true,
+  "rightToLeft": false,
+  "livePreview": true
 }
