@@ -1,19 +1,3 @@
->[!SUMMARY]+ Table of Contents
->- [[Mirai Micropsi BPP Bericht#Mirai Robot Control Technology Overview|Mirai Robot Control Technology Overview]]
->- [[Mirai Micropsi BPP Bericht#Scope and Implementation|Scope and Implementation]]
->- [[Mirai Micropsi BPP Bericht#System Setup and Configurations|System Setup and Configurations]]
->   - [[Mirai Micropsi BPP Bericht#Hardware Setup|Hardware Setup]]
->   - [[Mirai Micropsi BPP Bericht#Network Setup|Network Setup]]
->   - [[Mirai Micropsi BPP Bericht#Tool Configuration|Tool Configuration]]
->- [[Mirai Micropsi BPP Bericht#MIRAI-Skill Types|MIRAI-Skill Types]]
->- [[Mirai Micropsi BPP Bericht#Creating and Training a Positioning Skills|Creating and Training a Positioning Skills]]
->   - [[Mirai Micropsi BPP Bericht#Creating Positioning Skills|Creating Positioning Skills]]
->   - [[Mirai Micropsi BPP Bericht#Recording Episodes|Recording Episodes]]
->   - [[Mirai Micropsi BPP Bericht#MIRAI Cloud Training|MIRAI Cloud Training]]
->   - [[Mirai Micropsi BPP Bericht#Testing and Optimizing Skills|Testing and Optimizing Skills]]
->- [[Mirai Micropsi BPP Bericht#Integrating MIRAI Skills with FANUC Teach Pendant|Integrating MIRAI Skills with FANUC Teach Pendant]]
->   - [[Mirai Micropsi BPP Bericht#Challenges and Constraints|Challenges and Constraints]]
-
 I was introduced to a project aimed at revolutionizing the assembly line's operational efficiency and adaptability through the integration of Micropsi Industries' MIRAI robot control technology with a FANUC CRX-10iA/L collaborative robot.
 
 The main objective was to automate complex, dynamic tasks that require a high degree of precision and adaptability, which are often beyond the capabilities of traditional automation systems. By leveraging the advanced machine learning capabilities of MIRAI robot control technology in conjunction with the collaborative features of the FANUC robot, the project aimed to introduce a more adaptable, intuitive, and efficient automation solution, responding to the manufacturing sector's growing demand for flexible and intelligent automation systems.
@@ -91,13 +75,13 @@ The focus was on employing positioning skills for the precise placement of truck
 
 ## Creating Positioning Skills
 
-The first step in the process is to define a starting point. This involves manually guiding the robot's Tool Center Point (TCP) to a specific location using the teach pendant. 
+The first step in the process is to define a starting point. This involves manually guiding the robot's Tool Center Point (TCP)/ Gripper to a specific location using the teach pendant. 
 
 For the picking task, the chosen starting position is [input joint position of the robot here] (refer to the teach pendant image for details on the joint position). This spot is selected to ensure the camera has a clear view of the entire work area for the picking task. 
 
 For the placing task, the chosen starting position is [input joint position of the robot here] (refer to the teach pendant image for details on the joint position). This position is located above the holder where the bracket is placed, ensuring clear view of the bracket and its holder
 
-Both position is recorded in position registers [input position registers number here] (refer to the teach pendant's position register image) within the robot's controller, allowing for easy repetition of this setup in later tasks.
+Both position is recorded relative to robot base/ world coordinate in position registers [input position registers number here] (refer to the teach pendant's position register image) within the robot's controller, allowing for easy repetition of this setup in later tasks.
 
 [Insert image of the teach pendant showing joint position] [Insert image of the teach pendant showing position register]
 
@@ -150,12 +134,97 @@ Recording a minimum of 5-10 episodes, each with 60-90 minutes duration are recom
 Once the requisite number of episodes are recorded, the skills are primed for cloud-based training within the Micropsi Industries platform. Initiating cloud training prompts a status update, "Cloud training in progress," accompanied by an estimate of the time needed for completion, typically around 90 minutes. Upon conclusion of the cloud training phase, the skills become accessible for testing purposes.
 
 ## Testing and Optimizing Skills
+  
+After the cloud training has been completed, the skills for both picking and placing tasks are prepared for testing, which is conducted from the home screen. The robot is first positioned at a designated starting point by either reverting to a reference position saved earlier or through manual adjustment. Obstacles are cleared and the Force/Torque (F/T) sensor is calibrated prior to beginning the tests.
+
+**For the picking task:**
+
+- The switch is to be placed on the work area, either to mimic real-world scenarios or to replicate the conditions of the initial training setup, before the test is initiated.
+- Once the robot has been positioned at the starting point, the visibility of the switch is confirmed by examining the live view.
+- Upon skill execution, the gripper is expected to move precisely from the starting point to the switch, skillfully adapting to the switch's position and orientation.
+- The robot's adaptability is tested by changing the switch's position and orientation during the test, to see if the robot can adapt and follow the changes.
+
+**For the placing task:**
+
+- The gripper is first manually guided to the switch in the work area using the teach pendant, where the switch should be clamped by the gripper.
+- The gripper is then closed manually using the teach pendant
+- The gripper is then moved to the reference position, ensuring the bracket and its holder are visible in the live view.
+- The skill execution process, similar to the picking task, should be started, with the robot's performance being carefully observed.
+
+Manual intervention with the guidance feature may be necessary during testing if something goes wrong or for safety reasons.
+
+Skills automatically conclude upon reaching a designated end state but can be restarted for further assessment. The end state that halts the skill will be indicated, providing insights into why the skill execution stopped.
+
+Between tests, recalibration of the sensor is required to ensure accuracy. If the skills demonstrate consistent performance under various conditions, they are deemed ready to be integrated with the FANUC Program. Any deficiencies identified can be addressed by focusing on specific areas in need of improvement during subsequent training sessions, thereby enhancing the skill's effectiveness.
 
 # Integrating MIRAI Skills with FANUC Teach Pendant
 
 ## Adding MIRAI Skills to the DATA String Registers
 
-## Adding a Program to Execute a MIRAI Skill
+For a MIRAI skill to be executed within a program, the skill name must first be entered into the DATA String Registers through the following steps:
+
+1. **Access to the Registers**: The DATA String Registers are accessed by selecting the desired display area, followed by tapping on [DATA] and then [TYPE].
+    
+2. **Selection of the Register Type**: [3 String Reg] is chosen from the options available to proceed to the string registers section.
+    
+3. **Skill Name Entry**: In the right field of an empty register, a double tap and then [ENTER] are performed to enter the name of the desired skill to be executed, such as SR[ 3: ] = skill2. Ensuring the skill name precisely matches the one in the MIRAI Training App is crucial. Optionally, a comment or additional relevant information about the skill can be added in the left field of the register. All the skills intended for inclusion in the program are listed in this section.
+
+## Creating a Program to Execute MIRAI Skills
+
+Once the skills have been entered into the data string registers, a program can be developed and designated [insert program name]. This program is designed to orchestrate the entire task of picking up the switch and positioning it into the bracket, necessitating the invocation and execution of each skill for the picking and placing tasks at precisely timed intervals within the program.
+
+### Algorithm Overview
+
+1. **Initialization:**
+    
+    - Disable collaborative mode to allow for unrestricted robot movement.
+    - Set motion speed override to 25% for safety and precision.
+2. **Main Processing Loop (Repeat 4 Times):**
+    
+    - Activate the Robotiq gripper.
+    - Open the gripper fully.
+    - Move the robot arm to the "Switch Grip Position" at maximum speed with precise stopping.
+    - Execute an external task or process (identified by `5`).
+    - Close the gripper with specified parameters.
+    - Move linearly to the "Gripper Offset Position" at a controlled speed with precise stopping.
+    - Jump to the "Switch Bottom Position" at maximum speed with precise stopping.
+    - Re-enable collaborative mode for safety.
+    - Execute another external task or process (identified by `4`).
+    - Disable collaborative mode to continue with unrestricted movements.
+    - Open the gripper to release any held object.
+    - Return the robot arm to the "Home Position" at maximum speed with precise stopping.
+3. **Cleanup and Reset:**
+    
+    - The loop concludes after 4 iterations, ensuring the sequence is repeated the specified number of times.
+    - The program may end or transition to other tasks not detailed in this script.
+
+### Pseudocode
+
+```
+// Initialization
+Set collaborative_mode = OFF
+Set speed_override = 25%
+
+// Main Processing Loop
+For counter = 1 To 4
+    ActivateGripper(gripper_id=9)
+    OpenGripper(gripper_id=9, position=0, speed=255, force=255, option=1)
+    MoveToPosition(position_id=8, speed=100%, mode=FINE)
+    ExecuteExternalTask(task_id=5)
+    CloseGripper(gripper_id=9, position=255, speed=255, force=255, option=1)
+    MoveLinearToPosition(position_id=10, speed=250mm/sec, mode=FINE)
+    MoveToPosition(position_id=9, speed=100%, mode=FINE)
+    Set collaborative_mode = ON
+    ExecuteExternalTask(task_id=4)
+    Set collaborative_mode = OFF
+    OpenGripper(gripper_id=9, position=0, speed=255, force=255, option=1)
+    MoveToHomePosition(position_id=5, speed=100%, mode=FINE)
+EndFor
+
+// Cleanup and Reset (if any)
+// End of Program
+
+```
 
 # Challenges and Constraints
 

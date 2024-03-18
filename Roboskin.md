@@ -1,0 +1,6 @@
+- Meeting with supplier Roboskin from oechsler
+- Introduction to the project
+- Talking about possibilities
+- Talking about the process to create a cusioning
+- Powder/ liquid print
+- Requirement: 3D Model, focus on mechanicalstructure

@@ -37,7 +37,7 @@ Während meines Praktikums wurde ich in das "Smart Automation Team" innerhalb de
 
 Ich wurde in ein Projekt eingeführt, das darauf abzielte, die Betriebseffizienz und Anpassungsfähigkeit der Montagelinie durch die Integration der MIRAI-Robotersteuerungstechnologie von Micropsi Industries mit einem kollaborativen Roboter FANUC CRX-10iA/L zu optimieren.
 
-Das Hauptziel bestand darin, komplexe, dynamische Aufgaben zu automatisieren, die ein hohes Maß an Präzision und Anpassungsfähigkeit erfordern, was die Möglichkeiten traditioneller Automatisierungssysteme oft übersteigt. Durch die Nutzung der fortschrittlichen maschinellen Lernfähigkeiten der MIRAI-Robotersteuerungstechnologie in Verbindung mit den kollaborativen Funktionen des FANUC-Roboters sollte im Rahmen des Projekts eine anpassungsfähigere, intuitivere und effizientere Automatisierungslösung eingeführt werden, die der wachsenden Nachfrage des Fertigungssektors nach flexiblen und intelligenten Automatisierungssystemen gerecht wird.
+Das Hauptziel besteht darin, komplexe, dynamische Aufgaben zu automatisieren, die ein hohes Maß an Präzision und Anpassungsfähigkeit erfordern, was die Möglichkeiten traditioneller Automatisierungssysteme oft übersteigt. Durch die Nutzung der fortschrittlichen maschinellen Lernfähigkeiten der MIRAI-Robotersteuerungstechnologie in Verbindung mit den kollaborativen Funktionen des FANUC-Roboters soll im Rahmen des Projekts eine anpassungsfähigere, intuitivere und effizientere Automatisierungslösung eingeführt werden, die der wachsenden Nachfrage des Fertigungssektors nach flexiblen und intelligenten Automatisierungssystemen gerecht wird.
 
 ## 3.1 Übersicht über die MIRAI-Robotersteuerung
 
@@ -51,23 +51,23 @@ Diese Skills funktionieren als dynamische Vorgaben für den Roboter, die es ihm 
 
 ## 3.2 Umfang der Implementierung
 
-Der Umfang des Projekts wurde genau definiert, um sich auf Aufgaben zu konzentrieren, die eine fortgeschrittene Hand-Augen-Koordination erfordern. Eine Schlüsselaufgabe war die präzise Manipulation von LKW-Schaltern in einer Halterung während des Montageprozesses. Die Umsetzung umfasste die Durchführung von handgeführtem Training zur Entwicklung von "MIRAI-Skills", die Optimierung dieser Sills für die Echtzeitanwendung und die Integration dieser Skills zusammen mit dem FANUC-Roboterprogramm, um sicherzustellen, dass sich der Roboter effektiv an die Variationen der Aufgabe anpassen kann.
+Der Umfang des Projekts wird genau definiert, um sich auf Aufgaben zu konzentrieren, die eine fortgeschrittene Hand-Augen-Koordination erfordern. Eine Schlüsselaufgabe ist die präzise Manipulation von LKW-Schaltern in einer Halterung während des Montageprozesses. Die Umsetzung umfasst die Durchführung von handgeführtem Training zur Entwicklung von sogenannten MIRAI-Skills, die Optimierung dieser Skills für die Echtzeitanwendung und die Integration dieser Skills zusammen mit dem FANUC-Roboterprogramm, um sicherzustellen, dass sich der Roboter effektiv an die Variationen der Aufgabe anpassen kann.
 
 ## 3.3 Systemeinrichtung und Konfigurationen
 
 ### 3.3.1 Hardware Einrichtung
 
-Die Integration der MIRAI-Robotersteuerungstechnologie in den kollaborativen Roboter FANUC CRX-10iA/L basierte auf verschiedenen Schlüsselkomponenten, die alle zur Gesamtfunktionalität des Systems beitragen. Zu diesen Komponenten gehören:
+Die Integration der MIRAI-Robotersteuerungstechnologie in den kollaborativen Roboter FANUC CRX-10iA/L basiert auf verschiedenen Schlüsselkomponenten, die alle zur Gesamtfunktionalität des Systems beitragen. Zu diesen Komponenten gehören:
 
-- **Fanuc CRX-10iA/L kollaborativer Roboter und R-30iB Mini Controller**: Die primäre Robotereinheit, die in dem Projekt verwendet wurde, wurde aufgrund ihrer Anpassungsfähigkeit und ihrer Sicherheitsmerkmale ausgewählt, die für kollaborative Arbeitsumgebungen förderlich sind.
+- **Fanuc CRX-10iA/L kollaborativer Roboter und R-30iB Mini Controller**: Die primäre Robotereinheit wird aufgrund ihrer Anpassungsfähigkeit und ihrer Sicherheitsmerkmale ausgewählt, die für kollaborative Arbeitsumgebungen förderlich sind.
     
-- **Mirai Robotersteuerung**: Die Steuereinheit ist zuständig für:
+- **MIRAI-Controller**: Die Steuereinheit ist zuständig für:
 
     - Erfassung und Speicherung der vom Benutzer durchgeführten Trainingseinheiten.
-	- Erfassen und Speichern von Fähigkeiten, die über die Schulungsplattform von Micropsi Industries trainiert wurden.
-	- Generierung und Steuerung der Aktionen des Roboters durch Anwendung dieser trainierten Fähigkeiten in Echtzeit, geleitet durch visuelles und anderes sensorisches Feedback.
+	- Erfassen und Speichern von Skills, die über die Trainingsplattform von Micropsi Industries trainiert werden.
+	- Generierung und Steuerung der Aktionen des Roboters durch Anwendung dieser trainierten Skills in Echtzeit, geleitet durch visuelles und anderes sensorisches Feedback.
 
-- **Ximea xiQ USB3-Kamera mit Fujinon-Objektiv und Ringlicht**: Eine hochauflösende Kamera, die dem Mirai-System visuellen Input liefert.
+- **Ximea xiQ USB3-Kamera mit Fujinon-Objektiv und Ringlicht**: Eine hochauflösende Kamera, die dem MIRAI-System visuellen Input liefert.
     
 - **ATI F/T-Sensor (Kraft-/Drehmomentsensor)**: Ein Sensor, der Rückmeldung über die angewandten Kräfte und Drehmomente gibt.
     

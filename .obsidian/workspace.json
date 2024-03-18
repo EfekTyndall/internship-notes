@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Praktikumsbericht/Aufbau Praktikumsbericht.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "42e61862bc9f989b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Praktikumsbericht/Mirai Micropsi BPP Bericht.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -148,14 +161,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7bb22ced81c55d08",
+  "active": "42e61862bc9f989b",
   "lastOpenFiles": [
-    "Others/Evaluation Template.md",
+    "Praktikumsbericht/Aufbau Praktikumsbericht.md",
+    "Praktikumsbericht/Mirai Micropsi BPP Bericht.md",
     "Others/Prompts.md",
+    "Guides and Documentation/Mirai-Micropsi Tech.md",
+    "Roboskin.md",
+    "Others/Evaluation Template.md",
     "Others/Budgeting.md",
     "Guides and Documentation/Accounts and Links.md",
     "Guides and Documentation/Starter Onboarding Information From Felix.md",
-    "Guides and Documentation/Mirai-Micropsi Tech.md",
     "Guides and Documentation/FANUC Roboguide.md",
     "Image Segmentation.md",
     "machine-learning/image-classification.md",
@@ -180,9 +196,6 @@
     "cheat-sheet",
     "venv/Untitled.md",
     "venv/hello-world.md",
-    "venv/test2.md",
-    "Test.md",
-    "markdown-cheat-sheets.md.md",
     "venv"
   ]
 }
