@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Praktikumsbericht/Aufbau Praktikumsbericht.md",
+                "file": "Praktikumsbericht/3. Automated Screw Driving Robot for Truck Doors.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Praktikumsbericht/Mirai Micropsi BPP Bericht.md",
+                "file": "Projects/Automated Screwing/Confluence Documentation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Praktikumsbericht/Mirai Micropsi BPP Bericht.md",
+                "file": "Praktikumsbericht/3. Automated Screw Driving Robot for Truck Doors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Praktikumsbericht/Mirai Micropsi BPP Bericht.md",
+                "file": "Praktikumsbericht/3. Automated Screw Driving Robot for Truck Doors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Praktikumsbericht/Mirai Micropsi BPP Bericht.md"
+                "file": "Praktikumsbericht/3. Automated Screw Driving Robot for Truck Doors.md"
               }
             }
           }
@@ -161,11 +160,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "42e61862bc9f989b",
+  "active": "7bb22ced81c55d08",
   "lastOpenFiles": [
+    "Projects/Automated Screwing/Confluence Documentation.md",
+    "Praktikumsbericht/3. Automated Screw Driving Robot for Truck Doors.md",
+    "Week 10/Task 2024-03-13.md",
+    "Projects/Automated Screwing/Documentation Resources.md",
     "Praktikumsbericht/Aufbau Praktikumsbericht.md",
-    "Praktikumsbericht/Mirai Micropsi BPP Bericht.md",
     "Others/Prompts.md",
+    "Praktikumsbericht/2. Implementation of Mirai Robot Control Technology.md",
+    "Praktikumsbericht/Mirai Micropsi BPP Bericht.md",
     "Guides and Documentation/Mirai-Micropsi Tech.md",
     "Roboskin.md",
     "Others/Evaluation Template.md",
@@ -186,16 +190,11 @@
     "python/PyCharm-Shortcuts.md",
     "sd-anaconda-prompt.md",
     "stable-diffusion-amd",
-    "python/python-chatgpt-prompts.md",
     "images/Screenshot 2023-11-26 195736.png",
-    "Screenshot 2023-11-26 195736.png.md",
     "images",
-    "Screenshot.md",
     "opencv",
     "python",
     "cheat-sheet",
-    "venv/Untitled.md",
-    "venv/hello-world.md",
     "venv"
   ]
 }

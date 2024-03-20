@@ -101,7 +101,7 @@ The tool being used is also specified, which in this scenario is the previously 
 
 [Insert Skill Creation Screenshot 4]
 
-Adjusting the camera's gain and exposure is the next step. These settings can be tweaked while viewing the live image on the screen. For the best results, the camera's focus and aperture may also need manual adjustments, with an aperture value of 8 being recommended. The camera should be set up so the target object is clearly visible in the live image.
+Adjusting the camera's gain and exposure is the next step. These settings can be tweaked while viewing the live image on the screen. Here a gain value of [input gain value] and a exposure value of [input exposure value]. The camera should be set up so the target object is clearly visible in the live view.
 
 [Insert Skill Creation Screenshot 5]
 
@@ -159,9 +159,9 @@ Between tests, recalibration of the sensor is required to ensure accuracy. If th
 
 # Integrating MIRAI Skills with FANUC Teach Pendant
 
-## Adding MIRAI Skills to the DATA String Registers
+## Adding MIRAI Skills to String Registers
 
-For a MIRAI skill to be executed within a program, the skill name must first be entered into the DATA String Registers through the following steps:
+For a MIRAI skill to be executed within a teach pendant program, the skill name must first be entered  into String Registers in the robot controller using the teach pendant. The picking skill is saved to Register R[5] and the placing skill is saved to register R[4]
 
 1. **Access to the Registers**: The DATA String Registers are accessed by selecting the desired display area, followed by tapping on [DATA] and then [TYPE].
     
@@ -177,26 +177,25 @@ Once the skills have been entered into the data string registers, a program can 
 
 1. **Initialization:**
     
-    - Disable collaborative mode to allow for unrestricted robot movement.
+    - Enable collaborative mode for safety.
     - Set motion speed override to 25% for safety and precision.
 2. **Main Processing Loop (Repeat 4 Times):**
     
-    - Activate the Robotiq gripper.
+    - Activate the gripper.
     - Open the gripper fully.
-    - Move the robot arm to the "Switch Grip Position" at maximum speed with precise stopping.
-    - Execute an external task or process (identified by `5`).
-    - Close the gripper with specified parameters.
+    - Move the robot arm to the picking task start position at maximum speed with precise stopping.
+    - Execute the picking skill to find the switch.
+    - Close the gripper.
     - Move linearly to the "Gripper Offset Position" at a controlled speed with precise stopping.
-    - Jump to the "Switch Bottom Position" at maximum speed with precise stopping.
-    - Re-enable collaborative mode for safety.
-    - Execute another external task or process (identified by `4`).
-    - Disable collaborative mode to continue with unrestricted movements.
+    - Move to the placing task start position at maximum speed with precise stopping.
+    - Disable collaborative mode.
+    - Execute the placing skill to slot in the switch to the bracket
+    - Enable collaborative mode
     - Open the gripper to release any held object.
-    - Return the robot arm to the "Home Position" at maximum speed with precise stopping.
-3. **Cleanup and Reset:**
+    - Return the robot arm to the home position at maximum speed with precise stopping.
+3. **Reset:**
     
     - The loop concludes after 4 iterations, ensuring the sequence is repeated the specified number of times.
-    - The program may end or transition to other tasks not detailed in this script.
 
 ### Pseudocode
 
