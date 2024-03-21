@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7bb22ced81c55d08",
+            "id": "42e61862bc9f989b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,18 +20,19 @@
             }
           },
           {
-            "id": "42e61862bc9f989b",
+            "id": "3845c36c704c2360",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Automated Screwing/Confluence Documentation.md",
+                "file": "Automatisierter Schraubroboter für LKW-Türen.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "fcfb963f3bef90a4",
@@ -97,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Praktikumsbericht/3. Automated Screw Driving Robot for Truck Doors.md",
+                "file": "Automatisierter Schraubroboter für LKW-Türen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Praktikumsbericht/3. Automated Screw Driving Robot for Truck Doors.md",
+                "file": "Automatisierter Schraubroboter für LKW-Türen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Praktikumsbericht/3. Automated Screw Driving Robot for Truck Doors.md"
+                "file": "Automatisierter Schraubroboter für LKW-Türen.md"
               }
             }
           }
@@ -160,24 +162,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7bb22ced81c55d08",
+  "active": "3845c36c704c2360",
   "lastOpenFiles": [
-    "Projects/Automated Screwing/Confluence Documentation.md",
     "Praktikumsbericht/3. Automated Screw Driving Robot for Truck Doors.md",
+    "Automatisierter Schraubroboter für LKW-Türen.md",
+    "Machine Learning/Image Segmentation.md",
+    "Roboskin.md",
+    "Others/Prompts.md",
     "Week 10/Task 2024-03-13.md",
+    "Projects/Automated Screwing/Confluence Documentation.md",
+    "Praktikumsbericht/Mirai Micropsi BPP Bericht.md",
+    "Praktikumsbericht/2. Implementation of Mirai Robot Control Technology.md",
     "Projects/Automated Screwing/Documentation Resources.md",
     "Praktikumsbericht/Aufbau Praktikumsbericht.md",
-    "Others/Prompts.md",
-    "Praktikumsbericht/2. Implementation of Mirai Robot Control Technology.md",
-    "Praktikumsbericht/Mirai Micropsi BPP Bericht.md",
     "Guides and Documentation/Mirai-Micropsi Tech.md",
-    "Roboskin.md",
     "Others/Evaluation Template.md",
     "Others/Budgeting.md",
     "Guides and Documentation/Accounts and Links.md",
     "Guides and Documentation/Starter Onboarding Information From Felix.md",
     "Guides and Documentation/FANUC Roboguide.md",
-    "Image Segmentation.md",
     "machine-learning/image-classification.md",
     "machine-learning/image-classification-scikit-learn.md",
     "opencv/opencv-basics.md",
@@ -188,7 +191,6 @@
     "opencv/virtual-paint-project.md",
     "python/virtual-environment.md",
     "python/PyCharm-Shortcuts.md",
-    "sd-anaconda-prompt.md",
     "stable-diffusion-amd",
     "images/Screenshot 2023-11-26 195736.png",
     "images",
