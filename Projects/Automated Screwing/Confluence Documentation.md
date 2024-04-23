@@ -1,4 +1,4 @@
->[!SUMMARY]- Table of Contents
+>[!SUMMARY]+ Table of Contents
 >- [[Confluence Documentation#Automated Screwing Robot for Truck Door Assembly - Project Documentation|Automated Screwing Robot for Truck Door Assembly - Project Documentation]]
 >   - [[Confluence Documentation#1. Introduction and Objectives|1. Introduction and Objectives]]
 >   - [[Confluence Documentation#2. Operational Workflow|2. Operational Workflow]]
@@ -560,13 +560,30 @@ To enable the ISRA Vision System to accurately identify and locate each screwing
 6. **Execute Right-Hand Movement**: Call the program for right-hand position preparation.
 7. **End**: Conclude the sequence and prepare for the next cycle.
 
+1. **Check Home Position and Part Availability**:
+    - The left-hand pre-position is turned to and a wait of 0.40 seconds is initiated if the robot is at the home position with a part ready on the left assembly station (and not on the right).
+    - The process skips to step 5 for right-hand side processing if conditions are not met.
+2. **Speed Adjustment for Left-Hand Operation**:
+    - The speed is set to slow and the left-hand turn signal is turned off if the robot is set to move slowly with no active sensor scan.
+    - The speed is set to fast and the left-hand turn signal is turned off if the robot is set to move fast with no active sensor scan.
+    - A loop back to check speed settings again is initiated if a scan is active.
+3. **Execute Left-Hand Movement**: The program for left-hand position preparation is called and the sequence proceeds to the end.
+4. **Check Home Position for Right-Hand Operation**:
+    - The robot turns towards the right and waits for 0.40 seconds if it is at the home position with a part ready on the right (and not on the left).
+    - Part availability is checked without turning if conditions are not met.
+5. **Speed Adjustment for Right-Hand Operation**:
+    - Similar to step 2, the speed is adjusted based on robot settings and scan activity, and the right-hand turn signal is turned off.
+6. **Execute Right-Hand Movement**: The program for right-hand position preparation is called.
+7. **End**: The sequence is concluded and preparation for the next cycle is made.
+
 ### ``SAFEMOVE_CHECK_LEFT``
 
 #### Algorithm
 
+1. **Initial Condition Check**: Evaluate conditions for scanning the workspace.
 2. **Condition Check for Left-Hand (LH) Operation**:
     - If pre-positioned for left-hand operation and LH is not currently in process, turn towards the right-hand (RH) side and wait for 0.40 seconds.
-3. **Set Speed Limit**: Default speed is set to slow as a general limit.
+3. **Speed Configuration**: Default speed is set to slow as a general limit.
 4. **Movement Decision Based on Scanning**:
     - If the robot is set for slow movement and no scan is active, turn off the RH turn signal and proceed to final positioning.
     - If the robot is set for fast movement and no scan is active, increase speed to fast, turn off the RH turn signal, and proceed to final positioning.
@@ -578,14 +595,14 @@ To enable the ISRA Vision System to accurately identify and locate each screwing
 #### Algorithm
 
 1. **Initial Condition Check**: Evaluate conditions for scanning the workspace.
-2. **Pre-Condition Evaluation for RH Operation**:
+2. **Condition Check for Right-Hand (RH) Operation**:
     - If pre-conditions are met (RH is pre-positioned and not in process), initiate a left-hand (LH) turn and pause for 0.40 seconds.
 3. **Speed Configuration**: Default to a slow speed setting as a general limit.
 4. **Movement Adjustment Based on Scan**:
-    - **For Slow Movement**: If set for slow operation and no scan is active, deactivate LH turn and proceed to final positioning.
-    - **For Fast Movement**: If set for fast operation and no scan is active, deactivate LH turn, set to fast speed, and move to final positioning.
-5. **Scan In Progress**: If a scan is active and fast movement is set, loop back to re-evaluate movement conditions.
-6. **Final Positioning**: Move to the central home position at full speed and stop the timer.
+    - If set for slow operation and no scan is active, deactivate LH turn and proceed to final positioning.
+    - If set for fast operation and no scan is active, deactivate LH turn, set to fast speed, and move to final positioning.
+    - If a scan is in progress, loop back to check movement conditions again.
+5. **Final Positioning**: Move to the central home position at full speed and stop the timer.
 
 ### Notes:
 
