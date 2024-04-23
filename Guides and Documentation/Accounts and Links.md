@@ -6,3 +6,5 @@
 
 #### Useful Links:
 1. **[Social Intranet](https://social.cloud.tbintra.net/)**
+2. **[Apps | Microsoft 365 (office.com)](https://www.office.com/apps?auth=2)**
+
