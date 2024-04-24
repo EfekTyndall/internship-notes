@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "517d0db866ed6c87",
+            "id": "62b584a6831ede03",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Image Segmentation for AI Wheels.md",
+                "file": "Introduction to PyTorch.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "fcfb963f3bef90a4",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/Image Segmentation for AI Wheels.md",
+                "file": "Introduction to PyTorch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/Image Segmentation for AI Wheels.md",
+                "file": "Introduction to PyTorch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/Image Segmentation for AI Wheels.md"
+                "file": "Introduction to PyTorch.md"
               }
             }
           }
@@ -148,11 +149,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "517d0db866ed6c87",
+  "active": "62b584a6831ede03",
   "lastOpenFiles": [
+    "Power PC Setup List.md",
+    "Untitled.md",
+    "Introduction to PyTorch.md",
+    "Machine Learning/Image Segmentation for AI Wheels.md",
     "Machine Learning/Semantic Segmentation.md",
     "Machine Learning/Neural Networks.md",
-    "Machine Learning/Image Segmentation for AI Wheels.md",
     "Projects/Automated Screwing/Algorithm Idea for CSC.md",
     "Praktikumsbericht/Mirai Micropsi BPP Bericht.md",
     "Praktikumsbericht/Automatisierter Schraubroboter für LKW-Türen.md",
@@ -175,9 +179,6 @@
     "Guides and Documentation/Accounts and Links.md",
     "BPP/24.01.2024.md",
     "BPP/23.01.2024.md",
-    "BPP/22.01.2024.md",
-    "BPP/18.01.2024.md",
-    "BPP/17.01.2024.md",
     "BPP",
     "machine-learning",
     "stable-diffusion-amd",
