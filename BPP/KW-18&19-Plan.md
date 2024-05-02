@@ -1,0 +1,6 @@
+- Plant visit on 7. Mai 2024
+- Record and edit videos for Micropsi
+- Setup Raspberry Pi
+- AI Wheels: Still waiting for the updated code
+- Roboguide PC update and format
+- 

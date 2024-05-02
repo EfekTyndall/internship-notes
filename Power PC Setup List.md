@@ -2,4 +2,3 @@
 - [x] Git
 - [x] Anaconda
 - [x] Nvidia Drivers
-- [ ] 
