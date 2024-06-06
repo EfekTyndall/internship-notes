@@ -1,4 +1,0 @@
-- [x] Ubuntu
-- [x] Git
-- [x] Anaconda
-- [x] Nvidia Drivers
