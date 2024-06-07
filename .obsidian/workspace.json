@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "9928c475542c425d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Automated Screwing/Operational Workflow.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "cd4c6f4d9c65d1f6",
             "type": "leaf",
             "state": {
@@ -43,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BA/Visual Positioning and Tracking in 3D Space.md",
+                "file": "My Tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BA/Visual Positioning and Tracking in 3D Space.md",
+                "file": "My Tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BA/Visual Positioning and Tracking in 3D Space.md"
+                "file": "My Tasks.md"
               }
             }
           }
@@ -173,11 +160,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cd4c6f4d9c65d1f6",
+  "active": "76b4724eb8f32dcd",
   "lastOpenFiles": [
     "Projects/Automated Screwing/Operational Workflow.md",
-    "My Tasks.md",
     "BA/Visual Positioning and Tracking in 3D Space.md",
+    "My Tasks.md",
     "Problems.md",
     "Praktikumsbericht/3. Automated Screw Driving Robot for Truck Doors.md",
     "TO DO/2024-06-06.md",

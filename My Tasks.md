@@ -1,7 +1,9 @@
 - [ ] **AC-Robot:**
 	- [x] Prepare and apply DCS "Cartesian Speed Check" settings for left and right fixture
+	- [x] Create a documentation for the operational workflow
+	- [ ] Run tests on the robot with Felix.
+	- [ ] Reattach the bumper and cut it if necessary.
 	- [ ] Create a documentation for the important DCS settings
-	- [ ] Create a documentation for the operational workflow
 - [ ] **AI-Wheels:**
 	- [ ] Image processing to optimize mask generation for sam.
 - [ ] **Bachelor Arbeit:**
@@ -10,3 +12,4 @@
 - [ ] **Others:**
 	- [ ] Note down all problems in the working stations
 	- [ ] Travel to DTC to upgrade laptop's RAM
+
