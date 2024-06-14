@@ -27,3 +27,12 @@ Qualifications:
 - Technical understanding
 - Quick comprehension
 
+- Configured and maintained the local network and computer systems at the ARENA2036 research factory.
+- Set up and programmed collaborative robots from FANUC and Universal Robots.
+- Commissioned and programmed an AI-driven collaborative robot.
+- Participated in the development of an automatic screw driving robot system.
+- Supported the test and evaluation of a machine-learning-based bin-picking robot system.
+- Engaged in research on state-of-the-art deep learning image segmentation methods.
+- Participated in meetings with various suppliers and startups.
+- Created detailed test documentation and videos.
+
