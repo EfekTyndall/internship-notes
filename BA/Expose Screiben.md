@@ -1,7 +1,8 @@
 [Scribbr - Exposé schreiben](https://www.scribbr.de/anfang-abschlussarbeit/expose-bachelorarbeit/?utm_source=youtube&utm_medium=description&utm_campaign=expose)
 
-- Problemstellung, Forschungsstand und Konzept vorstellen
-- Zeitplan und Literatur
+- Darstellung der wichtigsten Bestandteile der Bachelorarbeit
+- Problemstellung, Forschungsstand und Konzept der Bachelorarbeit werden vorgestellt.
+- Zeitplan und Literatur werden aufgelistet
 - Zwischen 2 bis 5 Seiten
 
 ## Stilregel

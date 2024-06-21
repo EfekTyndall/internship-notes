@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "74ef6b23dfb73aa7",
+        "id": "b12bec4717cb990f",
         "type": "tabs",
         "children": [
           {
-            "id": "76b4724eb8f32dcd",
+            "id": "05cad50bbb49b3e0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "My Tasks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5e5dc0f715822acd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Workstation Problem.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "13c4f493cc664054",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Important Robot Files.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "80bd6ac1e2ab707d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Expose.md",
+                "file": "Projects/Automated Screwing/TP Program.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "fcfb963f3bef90a4",
@@ -123,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Expose.md",
+                "file": "Projects/Automated Screwing/TP Program.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Expose.md",
+                "file": "Projects/Automated Screwing/TP Program.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Expose.md"
+                "file": "Projects/Automated Screwing/TP Program.md"
               }
             }
           }
@@ -186,36 +148,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "80bd6ac1e2ab707d",
+  "active": "0a7461222a8eb5c3",
   "lastOpenFiles": [
-    "Expose.md",
-    "My Tasks.md",
-    "Workstation Problem.md",
-    "Important Robot Files.md",
+    "Projects/Automated Screwing/Confluence Documentation.md",
+    "Projects/Automated Screwing/TP Program.md",
+    "BA/Expose Screiben.md",
+    "BA/Expose-BA.md",
+    "Projects/Automated Screwing/Aufraumen.md",
+    "Projects/Automated Screwing/Problems.md",
     "Dienstag 12.06.2024.md",
+    "Projects/Automated Screwing/AC-Robot-Speed-Test.md",
+    "Projects/Automated Screwing/AC Robot Speed & Force Test.md",
+    "Projects/Automated Screwing/AC-Robot-State-Machine.md",
+    "Projects/Automated Screwing/Algorithm Idea for CSC.md",
+    "Projects/Automated Screwing/Documentation Resources.md",
+    "Projects/Automated Screwing/Important Files.md",
+    "Projects/Automated Screwing/Notes.md",
     "Mittwoch 12.06.2024.md",
+    "My Tasks.md",
+    "Projects/Automated Screwing/Operational Workflow.md",
+    "Guides and Documentation/Starter Onboarding Information From Felix.md",
+    "Praktikumsbericht/Aufgabenstellung.md",
     "Praktikumsbericht/Resources/Internship in Robotics and Computer Vision.md",
-    "Praktikumsbericht/2. Implementation of Mirai Robot Control Technology.md",
+    "Praktikumsbericht/1. Introduction.md",
     "Praktikumsbericht/3. Automated Screw Driving Robot for Truck Doors.md",
     "Praktikumsbericht/Aufbau Praktikumsbericht.md",
-    "Praktikumsbericht/Aufgabenstellung.md",
+    "Workstation Problem.md",
+    "Praktikumsbericht/2. Implementation of Mirai Robot Control Technology.md",
     "DCS Settings.md",
-    "Problems.md",
-    "BA/Visual Positioning and Tracking in 3D Space.md",
-    "Projects/Automated Screwing/Operational Workflow.md",
-    "TO DO/2024-06-06.md",
     "BA",
-    "Projects/Automated Screwing/AC Robot Speed & Force Test.md",
     "TO DO",
-    "Projects/Automated Screwing/AC-Robot-Speed-Test.md",
-    "Projects/Automated Screwing/AC-Robot-State-Machine.md",
-    "Others/Windows Licenses.md",
-    "Others/Lebenslauf_AIRBUS.md",
-    "Others/Power PC Setup List.md",
-    "Others/Evaluation Template.md",
-    "Others/Anschreiben-AIRBUS.md",
-    "Others/BA-Stelleangebot.md",
-    "Others/BA-AIRBUS.md",
     "BPP/Daily Notes",
     "Praktikumsbericht/Resources",
     "Praktikumsbericht",
