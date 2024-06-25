@@ -313,9 +313,9 @@ To enable the ISRA Vision System to accurately identify and locate each screwing
 - **`ISRA_LH_SCREWING`:** Left hand screwing process
 - **`ISRA_RH_SCREWING`:** Right hand screwing process
 - **`ISRA_MAIN_ZAVIER`:** Main program
-- **`SAFEMOVE_CHECK_HOME`:**
-- **`SAFEMOVE_CHECK_LEFT`:** 
-- **`SAFEMOVE_CHECK_RIGHT`:**
+- **`SAFEMOVE_CHECK_HOME`:** Safety check at home position
+- **`SAFEMOVE_CHECK_LEFT`:** Safety check at pre-position left
+- **`SAFEMOVE_CHECK_RIGHT`:** Safety check at pre-position right
 
 ### `AA_HOME`
 
@@ -517,95 +517,49 @@ To enable the ISRA Vision System to accurately identify and locate each screwing
 
 #### Algorithm
 
-1. Initialize counter as `0`.
-2. **For** counter from `0` to `2`:
-    1. Call program `ISRA_CELL_INIT` to initialize I/O and parameters.
-    2. **If** the robot is not at the home position:
-        - Call program `AA_HOME` to move the robot to the home position.
-    3. Start the `TIMER[5]`.
-    4. Call program `SAFEMOVE_CHECK_HOME` to scan the environment for safety and move to pre-position left or pre-position right.
-    5. Change to fast override speed.
-    6. **If** the robot is at pre-position left and worker confirms the left-hand process:
-        - Call program `ISRA_LH_SCREWING` to start the left-hand screwing process.
-    **Else If** the robot is at pre-position right and worker confirms the right-hand process:
-        - Call program `ISRA_RH_SCREWING` to start the right-hand screwing process.
-    **Else**:
-        - Jump to label `1`.
-    7. **If** the robot is at pre-position left:
-        - Call program `SAFEMOVE_CHECK_LEFT` to scan the environment for safety and move to home.
-    **Else If** the robot is at pre-position right:
-        - Call program `SAFEMOVE_CHECK_RIGHT` to scan the environment for safety and move to home.
-    8. Label `1`:
-        - Stop `TIMER[5]`.
-        - Increment the counter by one.
-3. **End for loop**.
+1. The robot checks if its in the home position:
+	1. If not, it moves to the home position
+2. Calls SAFEMOVE_CHECK_HOME program to safely move to the left or right side.
+3. The robot checks if it is in the pre-position for the left-hand side (LH) and a part is ready on the left side:
+	1. If both conditions are met, it calls ISRA_LH_SCREWING program to start the screwing process on the left side.
+4. If the conditions for the left side are not met, it checks if it is in the pre-position for the right-hand side (RH) and a part is ready on the right side:
+	1. If both conditions are met, it calls ISRA_RH_SCREWING program to start the screwing process on the right side.
+5. If neither side is ready, the robot loops back to the beginning of the main loop.
+6. After the screwing process, the robot calls SAFEMOVE_CHECK_LEFT or SAFEMOVE_CHECK_RIGHT program to safely move back to home position if it was working on the left or right side.
+7. The robot repeat the process.
 
 ### ``SAFEMOVE_CHECK_HOME``
 
 #### Algorithm
 
-1. **Check Home Position and Part Availability**:
-    - If the robot is at the home position and a part is ready on the left (and not on the right), turn towards the left and wait for 0.40 seconds.
-    - If the conditions are not met, skip to step 5 for right-hand side processing.
-2. **Speed Adjustment for Left-Hand Operation**:
-    - If the robot is set to move slowly and no scan is active, set speed to slow and turn off the left-hand turn signal.
-    - If the robot is set to move fast and no scan is active, set speed to fast and turn off the left-hand turn signal.
-    - If a scan is active, loop back to check speed settings again.
-3. **Execute Left-Hand Movement**: Call the program for left-hand position preparation and proceed to the end.
-4. **Check Home Position for Right-Hand Operation**:
-    - If the robot is at the home position and a part is ready on the right (and not on the left), turn towards the right and wait for 0.40 seconds.
-    - If the conditions are not met, check for part availability without turning.
-5. **Speed Adjustment for Right-Hand Operation**:
-    - Similar to step 2, adjust speed based on robot settings and scan activity, and turn off the right-hand turn signal.
-6. **Execute Right-Hand Movement**: Call the program for right-hand position preparation.
-7. **End**: Conclude the sequence and prepare for the next cycle.
-
-1. **Check Home Position and Part Availability**:
-    - The left-hand pre-position is turned to and a wait of 0.40 seconds is initiated if the robot is at the home position with a part ready on the left assembly station (and not on the right).
-    - The process skips to step 5 for right-hand side processing if conditions are not met.
-2. **Speed Adjustment for Left-Hand Operation**:
-    - The speed is set to slow and the left-hand turn signal is turned off if the robot is set to move slowly with no active sensor scan.
-    - The speed is set to fast and the left-hand turn signal is turned off if the robot is set to move fast with no active sensor scan.
-    - A loop back to check speed settings again is initiated if a scan is active.
-3. **Execute Left-Hand Movement**: The program for left-hand position preparation is called and the sequence proceeds to the end.
-4. **Check Home Position for Right-Hand Operation**:
-    - The robot turns towards the right and waits for 0.40 seconds if it is at the home position with a part ready on the right (and not on the left).
-    - Part availability is checked without turning if conditions are not met.
-5. **Speed Adjustment for Right-Hand Operation**:
-    - Similar to step 2, the speed is adjusted based on robot settings and scan activity, and the right-hand turn signal is turned off.
-6. **Execute Right-Hand Movement**: The program for right-hand position preparation is called.
-7. **End**: The sequence is concluded and preparation for the next cycle is made.
+1. The robot checks if it is in the home position and whether the door components are ready.
+2. If a worker indicates a part is ready on the left side:
+	1. The robot scans the left side for any workers.
+	2. It waits until the scanning process is complete.
+	3. Calls AA_PREPOSLH program to turn to the left side
+3. If a worker indicates a part is ready on the right side:
+	1. The robot scans the right side for any workers.
+	2. It waits until the scanning process is complete.
+	3. It calls the AA_PREPOSRH program to turn to the right side.
+4. If parts are ready on both sides, the robot prioritizes the left side processing.
+5. If no parts are ready, the robot checks again from the beginning.
 
 ### ``SAFEMOVE_CHECK_LEFT``
 
 #### Algorithm
 
-1. **Initial Condition Check**: Evaluate conditions for scanning the workspace.
-2. **Condition Check for Left-Hand (LH) Operation**:
-    - If pre-positioned for left-hand operation and LH is not currently in process, turn towards the right-hand (RH) side and wait for 0.40 seconds.
-3. **Speed Configuration**: Default speed is set to slow as a general limit.
-4. **Movement Decision Based on Scanning**:
-    - If the robot is set for slow movement and no scan is active, turn off the RH turn signal and proceed to final positioning.
-    - If the robot is set for fast movement and no scan is active, increase speed to fast, turn off the RH turn signal, and proceed to final positioning.
-    - If a scan is in progress, loop back to check movement conditions again.
-5. **Final Positioning**: Move the robot to the center position at full speed and stop the timer.
+1. The robot checks if it is in the pre-position for the left-hand side (LH) and if the left-hand side is not currently being processed.
+2. If both conditions are true:
+	1. The robot scans the environment for any workers.
+	2. It waits until the scanning process is complete.
+	3. Calls AA_HOME program to turn back to home position.
 
 ### ``SAFEMOVE_CHECK_RIGHT``
 
 #### Algorithm
 
-1. **Initial Condition Check**: Evaluate conditions for scanning the workspace.
-2. **Condition Check for Right-Hand (RH) Operation**:
-    - If pre-conditions are met (RH is pre-positioned and not in process), initiate a left-hand (LH) turn and pause for 0.40 seconds.
-3. **Speed Configuration**: Default to a slow speed setting as a general limit.
-4. **Movement Adjustment Based on Scan**:
-    - If set for slow operation and no scan is active, deactivate LH turn and proceed to final positioning.
-    - If set for fast operation and no scan is active, deactivate LH turn, set to fast speed, and move to final positioning.
-    - If a scan is in progress, loop back to check movement conditions again.
-5. **Final Positioning**: Move to the central home position at full speed and stop the timer.
-
-### Notes:
-
-- Why toggle DO[6:Turn_2_RH] & DO[7:Turn_2_LH] ON/OFF?
-- 
-
+1. The robot checks if it is in the pre-position for the right-hand side (RH) and if the right-hand side is not currently being processed.
+2. If both conditions are true:
+	1. The robot scans the environment for any workers.
+	2. It waits until the scanning process is complete.
+	3. Calls AA_HOME program to turn back to home position.

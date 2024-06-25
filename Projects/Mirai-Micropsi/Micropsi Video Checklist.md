@@ -1,4 +1,0 @@
-- [x] General view from start to finish
-- [x] Close up view for picking process with 4 different conditions
-- [x] Close up view for insertion process with 4 different conditions
-- [x] Training process and screen recording tablet
