@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e2f24d56e25a748b",
+            "id": "ac5d6b2aa56fbc6b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "To Do!.md",
+                "file": "Projects/Automated Screwing/Problems.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To Do!.md",
+                "file": "Projects/Automated Screwing/Problems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "To Do!.md",
+                "file": "Projects/Automated Screwing/Problems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To Do!.md"
+                "file": "Projects/Automated Screwing/Problems.md"
               }
             }
           }
@@ -148,34 +148,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e2f24d56e25a748b",
+  "active": "ac5d6b2aa56fbc6b",
   "lastOpenFiles": [
+    "Research.md",
+    "Projects/Automated Screwing/Problems.md",
+    "To Do!.md",
+    "2024-06-25.md",
+    "Projects/Automated Screwing/AC-Robot-Files.md",
+    "Projects/Automated Screwing/AC-Robot-State-Machine.md",
+    "Projects/Automated Screwing/Operational Workflow.md",
+    "Projects/Automated Screwing/Confluence Documentation.md",
     "Projects/Mirai-Micropsi/Micropsi Evaluation.md",
     "Projects/Mirai-Micropsi/Notes.md",
     "Projects/Mirai-Micropsi/Micropsi Video Checklist.md",
     "Projects/Mirai-Micropsi/How To Troubleshoot Possible Communication Problems.md",
     "Projects/Mirai-Micropsi/How to Connect Training Tablet to The Mirai Controller.md",
     "Projects/Mirai-Micropsi/How to Create a New Skill.md",
-    "Projects/Automated Screwing/Operational Workflow.md",
     "Projects/Mirai-Micropsi/ChatGPT Resources.md",
-    "Projects/Automated Screwing/Problems.md",
     "Projects/FANUC CRX-10iAL Documentation/How to Enable AUTO Operating Mode.md",
     "Projects/FANUC CRX-10iAL Documentation/The User-Defined Coordinate Systems (User Frames).md",
     "Projects/FANUC CRX-10iAL Documentation/The Tool Coordinate System (Tool Frame).md",
     "Projects/FANUC CRX-10iAL Documentation/Importing-Files.md",
     "Projects/FANUC CRX-10iAL Documentation/Backup and Restore.md",
     "Projects/Automated Screwing/TP Program.md",
-    "Projects/Automated Screwing/Confluence Documentation.md",
-    "Projects/Automated Screwing/AC-Robot-State-Machine.md",
     "Projects/Automated Screwing/Documentation Resources.md",
-    "Projects/Automated Screwing/AC-Robot-Files.md",
     "Projects/Automated Screwing/AC-Robot-Speed-Test.md",
     "Projects/Automated Screwing/AC Robot Speed & Force Test.md",
     "Praktikumsbericht/Aufbau Praktikumsbericht.md",
     "Praktikumsbericht/Mirai Micropsi BPP Bericht.md",
-    "Praktikumsbericht/Automatisierter Schraubroboter für LKW-Türen.md",
-    "Praktikumsbericht/Aufgabenstellung.md",
-    "Praktikumsbericht/3. Automated Screw Driving Robot for Truck Doors.md",
     "Images/AC_PR_2.jpg",
     "Images/AC_PR_1.jpg",
     "BA",
