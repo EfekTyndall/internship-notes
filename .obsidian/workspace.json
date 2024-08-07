@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "199c2223cf6cf356",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BA/Expose/expose_V1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f7188404cf469c62",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BA/research_questions.md",
+                "file": "BA/Expose/expose_V1.md",
                 "mode": "source",
                 "source": false
               }
@@ -172,14 +160,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "199c2223cf6cf356",
+  "active": "f7188404cf469c62",
   "lastOpenFiles": [
     "BA/research_questions.md",
-    "ai_research_tool.md",
     "BA/Expose/expose_V1.md",
-    "BA/Expose",
-    "BA/Expose/Expose-BA.md",
+    "ai_research_tool.md",
+    "BA/Expose/Expose_V1_Kurz.md",
     "BA/Expose/Expose Screiben.md",
+    "BA/Expose",
     "Projects/Automated Screwing/Problems.md",
     "Research.md",
     "To Do!.md",
