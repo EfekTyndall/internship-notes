@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "da6e887f93150c33",
+        "id": "2822474fd3cfe97b",
         "type": "tabs",
         "children": [
           {
-            "id": "f7188404cf469c62",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BA/Expose/expose_V1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2264258a4052d45b",
+            "id": "17a2f217802b9c5f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BA/Expose/expose_V1.md",
+                "file": "ai_research_tool.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BA/Expose/expose_V1.md",
+                "file": "ai_research_tool.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BA/Expose/expose_V1.md"
+                "file": "ai_research_tool.md"
               }
             }
           }
@@ -160,8 +148,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f7188404cf469c62",
+  "active": "17a2f217802b9c5f",
   "lastOpenFiles": [
+    "Research.md",
     "BA/research_questions.md",
     "BA/Expose/expose_V1.md",
     "ai_research_tool.md",
@@ -169,7 +158,6 @@
     "BA/Expose/Expose Screiben.md",
     "BA/Expose",
     "Projects/Automated Screwing/Problems.md",
-    "Research.md",
     "To Do!.md",
     "2024-06-25.md",
     "Projects/Automated Screwing/AC-Robot-Files.md",
